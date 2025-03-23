@@ -22,7 +22,7 @@ const FoodCategory = mongoose.model(
 );
 
 // Endpoint to get food items and categories
-router.post("/auth/foodData", async (req, res) => {
+router.get("/auth/foodData", async (req, res) => {
   try {
     // Fetching food items and categories from MongoDB
     const foodItems = await FoodItem.find(); // Correct model name here
